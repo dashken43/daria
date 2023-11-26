@@ -39,6 +39,7 @@ nav{
     align-items: center;
     padding-top: 25px;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .title{
     text-align: center;
@@ -56,6 +57,44 @@ nav{
     margin-top: 20px;
 }
 
+.info{
+    padding-top: 100px;
+
+}
+.big-title{
+    color: #01353E;
+text-align: center;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.6px;
+}
+ .box p {
+    margin-bottom: 20px;
+
+    color: #242121;
+    font-family: Roboto Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.6px;
+
+
+
+
+
+ }
+
+ .wrap{
+    display: flex;
+    gap: 50px;
+  margin-top: 30px;
+ }
+
+
+
 
 
 
@@ -71,7 +110,14 @@ nav{
 
 
 @media (max-width:700px) {
-    nav{
-        flex-wrap: wrap;
+    .wrap{
+        flex-direction: column;
+    }
+
+
+    .big-title{
+        font-size: 34px;
     }
 }
+
+
