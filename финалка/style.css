@@ -1,0 +1,124 @@
+body {
+  font-family: "Nyasha Sans";
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+
+
+.nav-link {
+  color: #000000;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  text-align: center;
+ 
+ }
+ h1{
+  color: #000000;
+  font-size: 70px;
+ }
+ 
+ .box{
+  display: flex;
+ }
+
+ p{
+  font-size: 28px;
+  color: rgb(72, 71, 71);
+ }
+ 
+
+.btn{
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  background: #FF6155;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(255, 255, 255) ;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid  #FF6155;
+  ;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0  #FF6155;
+  ;
+}
+.btn1{
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  background: #161616;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(255, 255, 255) ;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #161616;;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0   #161616;
+}
+
+.infi{
+  display: flex;
+}
+ 
+h2{
+  font-size: 40px;
+}
+
+.btn3{
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  background: #161616;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(255, 255, 255) ;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #161616;;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0   #161616;
+}
+ 
+.info{
+  display: flex;
+}
+
+.box1{
+  display: flex;
+}
+@media (max-width:700px) {
+    
+}
+
+
+@media (max-width:700px) {
+    .container{
+        flex-direction: column;
+        margin: 0 auto;
+    }
