@@ -9,17 +9,21 @@
 </head>
 <body>
 
-  <footer class="the-end">
+  <footer class="the-end1">
 
     <header >
       <div class="container">
         <nav  >
           <img  class="logo" src="./img/saspik.png" alt="">
-          <a class="nav-link"  href="">Home</a>
-          <a class="nav-link"  href="">Products</a>
-          <a class="nav-link"  href="">About</a>
-          <a class="nav-link"  href="">Reviewrs</a>
+          <div class="nav">
+            <a class="nav-link"  href="">Home</a>
+            <a class="nav-link"  href="">Products</a>
+            <a class="nav-link"  href="">About</a>
+            <a class="nav-link"  href="">Reviewrs</a>
+          </div>
+          
           <img class="menu" src="./img/group.png" alt="">
+          <img class="burger"   src="./img/burger.svg" alt="">
         </nav>
       </div>
       <section>
@@ -39,7 +43,14 @@
       
             <img data-aos="fade-left" data-aos-duration="3000"  src="./img/stick.png" alt="">
           </div>
-          <img src="./img/sponsor.png" alt="">
+          <div class="logos">
+           <img src="./img/amazon.png" alt="">
+           <img src="./img/google.png" alt="">
+           <img src="./img/prudential.png" alt="">
+           <img src="./img/microsoft.png" alt="">
+           <img src="./img/zoover.png" alt="">
+           <img src="./img/facebook.png" alt="">
+          </div>
         </div>
       </section>
     </header>
@@ -203,5 +214,18 @@ data-aos="fade-up"
 <script>
   AOS.init();
 </script>
+ 
+
+
+<script>
+  const burger = document.querySelector('.burger')
+  const nav = document.querySelector('.nav')
+
+  burger.addEventListener('click',()=> {
+      nav.classList.toggle('open')
+  
+  } )
+</script>
+
 </body>
 </html>
