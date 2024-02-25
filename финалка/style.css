@@ -9,9 +9,6 @@ body {
   padding: 0 15px;
 }
 
-header{
-  
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -217,7 +214,7 @@ h2 {
 }
 .email {
   margin: 0 auto;
-
+ color: #000000;
 
 
 }
