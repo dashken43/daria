@@ -165,6 +165,12 @@ h2 {
   justify-content: space-between;
 }
 
+  @media (max-width: 700px) {
+    .lip__wrap{
+      flex-direction: column;
+    }
+  }
+
 .lip__card {
   display: flex;
   @media (max-width: 700px) {
