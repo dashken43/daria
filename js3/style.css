@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card{
+  
+    border: 1px solid  slateblue;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    box-shadow: ;
+    img{
+        max-width: 250px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    button{
+        padding: 15px;
+    }
+}
+
+.wrapper{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
