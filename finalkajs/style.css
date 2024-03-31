@@ -1,137 +1,171 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-header{
-    background-image: url(./img/Bg.png);
-    height: 100dvh;
-    background-size: cover;
-    background-position: center;
-    
+header {
+  background-image: url(./img/Bg.png);
+  height: 100dvh;
+  background-size: cover;
+  background-position: center;
 }
-.container{
-   max-width: 1200px;
-   width: 100%;
-   margin: 0 auto;
-   padding: 0 15px;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
- 
 }
 .menu {
+  display: flex;
+  gap: 20px;
+  transition: all 0.5s;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+    position: fixed;
+    top: -150%;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: gray;
+
     display: flex;
-    gap: 20px;
-    transition: all 0.5s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-    a{
-        color: white;
-        text-decoration: none;
+    &.open {
+      top: 0;
     }
-
-    @media (max-width:800px) {
-        position: fixed;
-        top: -150% ;
-        left: 0;
-        width: 100%;
-        height: 100dvh;
-        background-color: gray;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-        &.open{
-            top: 0;
-        }
-    }
+  }
 }
 
 button {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    font-size: 17px;
-    font-weight: 500;
-    color: #ffffff80;
-    text-shadow: none;
-    background: transparent;
-    cursor: pointer;
-    box-shadow: transparent;
-    border: 1px solid #ffffff80;
-    transition: 0.5s ease;
-    user-select: none;
-  }
-  
-
-.burger {
-  
-    width: 30px;
-
-    display: none;
-    position: relative;
-    z-index: 4;
-
-    @media (max-width:800px) {
- display: block;
-    }
-  
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
 }
 
-.hero__wrapper{
-    display: flex;
-    gap: 30px;
- padding-top: 140px;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- color: aliceblue;
+.burger {
+  width: 30px;
 
- max-width: 580px;
- margin: 0 auto;
- text-align: center;
+  display: none;
+  position: relative;
+  z-index: 4;
 
-  h1{
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  gap: 30px;
+  padding-top: 140px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
     font-size: 90px;
- 
   }
 
-  p{
+  p {
     font-size: 30px;
   }
 
-  @media (max-width:650px ) {
-    h1{
-        font-size: 50px;
-
+  @media (max-width: 650px) {
+    h1 {
+      font-size: 50px;
     }
 
-    p{
-        font-size: 30px;
+    p {
+      font-size: 30px;
     }
   }
 }
 
-.cloud__box{
-    h2{
-        font-size: 50px;
-    }
-    
+.cloud__box {
+  h2 {
+    font-size: 50px;
+  }
 }
-.cloud__wrapper{
-    display: flex;
+.cloud__wrapper {
+  img {
+    max-width: 450px;
+    width: 100%;
+  }
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 735px) {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
-.cloud{
-    padding-top: 20px;
+.cloud {
+  padding-top: 20px;
+}
 
+.box1 {
+  text-align: center;
+  margin: 50px 0;
+ @media (max-width: 735px)  {
+   
+}
+}
+
+.features__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.features__wrapper img {
+  width: 100%;
+}
+
+.cart {
+  position: relative;
+}
+
+.overlay {
+  width: 85%;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 20px;
 }
