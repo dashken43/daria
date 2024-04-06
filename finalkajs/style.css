@@ -1,5 +1,6 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
 }
 
 header {
@@ -139,18 +140,48 @@ button {
 .box1 {
   text-align: center;
   margin: 50px 0;
- @media (max-width: 735px)  {
+  
+  h1{
+    font-size: 60px;
+  }
+
+
+  @media (max-width:750px)  {
+h1{
+  font-size: 40px;
+}    
    
-}
+   }
+
 }
 
 .features__wrapper {
   display: flex;
   gap: 30px;
+
+  @media (max-width: 935px)  {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  
+  }
+
+  @media (max-width:600px)  {
+    display: grid;
+    grid-template-columns: 1fr ;
+   
+   }
+
+
 }
 
 .features__wrapper img {
   width: 100%;
+
+  @media (max-width: 869px)  {
+
+   display: flex;
+   flex-direction: column;
+  }
 }
 
 .cart {
@@ -168,4 +199,47 @@ button {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   padding: 20px;
+}
+
+
+.box2{
+}
+
+.group{
+
+  h1{
+    padding: 30px;
+    font-size: 50px;
+    text-align:center ;
+  }
+}
+
+
+.document{
+
+
+  @media (max-width: 686px)  {
+
+    display: flex;
+    flex-direction: column;
+   } 
+display: flex;
+gap: 40px;
+  h2{
+    font-size:20px ;
+    color: black;
+  }
+  p{
+   font-size:15px ;
+  }
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.info{
+  background: #ED4C5C;
+  display: flex;
+  justify-content: center;
 }
