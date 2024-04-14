@@ -5,3 +5,5 @@ burger.addEventListener('click', ()  => {
  
     menu.classList.toggle('open')
 })
+
+

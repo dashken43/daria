@@ -274,12 +274,14 @@ gap: 40px;
 }
 
 .contact{
+
   display: flex;
   gap: 50px;
   padding: 100px;
   @media (max-width: 850px) {
     flex-direction: column;
   }
+  text-align: center;
 
 
 }
@@ -395,3 +397,16 @@ button:hover::before {
   }
 }
 
+
+.right{
+  
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__row {
+    flex-direction: column;
+  }
+}
